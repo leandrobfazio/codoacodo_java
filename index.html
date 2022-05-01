@@ -8,51 +8,91 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav id="navigator">
-        <img src="images/codoacodo.png" alt="logo codo a codo">
-        <header>
+    <header>
+        <div class="logo">
+            <img src="images/codoacodo.png" alt="logo codo a codo">
+            <h2 class="logo-nombre">Conf Bs As</h2>
+        </div>
+        <nav class="menu_derecha">
+            <a href="#" class="nav-link" style="color: lightgray;">La Conferencia</a>
+            <a href="#" class="nav-link">Los oradores</a>
+            <a href="#" class="nav-link">El lugar y la fecha</a>
+            <a href="#" class="nav-link" style="color: green;">Conviertete en orador</a>
+        </nav>
+    </header>
+    <div class="container1">
+        <img src="images/ba1.jpg" alt="Foto Buenos Aires" id="ba1">
+        <div class="texto_sobre_foto">
             <h1>Conf Bs As</h1>
-        </header>
-        <ul>
-            <li>La conferencia</li>
-            <li>Los oradores</li>
-            <li>El lugar y la fecha</li>
-            <li>Conviertete en orador</li>
-            <li>Comprar tickets</li>
-        </ul>
-    </nav>
-    <div id="container_1">
-        <img src="images/ba1.jpg" alt="ba1">
-        <article>
-            <hgroup>
-                <h1>Conf Bs As</h1>
-                <p>Bs As llegó por primera vez a Argentina... oihaekfskdfhaslkfjaflafhasdfjhsadlfhdsalfkhsadlfjhaslfkjhsadjlfhdsaljfasdlkfj
-                    hasdklfhasdfkjhaskfhfhsafkjaksdfhaskdfdsahkjfh23ihhhiihsdfhuidslfkhasfkhasdlfhkfasdjhfashkasjh</p>
-                <input type="button"> 
-                <input type="button">
-            </hgroup>
-            
-        </article>
-
+            <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+            <input type="button" value="Quiero ser orador"  class="botones" id="boton_trans">
+            <input type="button" value="Comprar tickets" class="botones" id="boton_verde">
+        </div>
     </div>
-    <p class="p1">CONOCE A LOS</p>
-    <p class="bold">ORADORES</p>
-    <div id="grid">
-
+    <div class="container2">
+        <h4>CONOCE A LOS</h4>
+        <h1><strong>ORADORES</strong></h1>
     </div>
-    <div id="foto">
-
+    <div class="container3">
+        <div class="cajas_oradores">
+            <img src="images/steve.jpg" alt="Steve Jobs" class="oradores">
+            <div>
+                <input type="button" class="flags" id="javascript_flag" value="javascript">
+                <input type="button" class="flags" id="react_flag" value="react">
+                <h2 class="orador_name">Steve Jobs</h2>
+                <p class="orador_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sequi earum iste magni, reiciendis animi optio tenetur possimus nesciunt ex expedita, dolor odit itaque quibusdam doloribus numquam quisquam quaerat sapiente!</p>
+            </div>
+        </div>
+        <div class="cajas_oradores">
+            <img src="images/bill.jpg" alt="Bill Gates" class="oradores">
+            <div>
+                <input type="button" class="flags" id="javascript_flag" value="javascript">
+                <input type="button" class="flags" id="react_flag" value="react">
+                <h2 class="orador_name">Bill Gates</h2>
+                <p class="orador_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sequi earum iste magni, reiciendis animi optio tenetur possimus nesciunt ex expedita, dolor odit itaque quibusdam doloribus numquam quisquam quaerat sapiente!</p>
+            </div>
+        </div>
+        <div class="cajas_oradores">
+            <img src="images/ada.jpeg" alt="Ada Lovelace" class="oradores">
+            <div>
+                <input type="button" class="flags" id="negocios_flag" value="Negocios">
+                <input type="button" class="flags" id="startups_flag" value="Startups">
+                <h2 class="orador_name">Ada Lovelace</h2>
+                <p class="orador_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sequi earum iste magni, reiciendis animi optio tenetur possimus nesciunt ex expedita, dolor odit itaque quibusdam doloribus numquam quisquam quaerat sapiente!</p>
+            </div>
+        </div>
     </div>
-    <div id="fondo_gris">
-
+    <div class="container4">
+        <div id="izquierda">
+        </div>
+        <div id="derecha">
+            <h2 class="texto_sobre_gris">Bs As - Octubre</h2>
+            <p class="texto_sobre_gris">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsum. Iste quasi aut eveniet necessitatibus inventore doloremque esse quos, magnam optio iure commodi impedit, deserunt adipisci repudiandae quam eaque vero?</p>
+            <input type="button" value="Conocé mas" class="botones" id="boton_conocemas">
+        </div>
     </div>
-    <p class="p1">CONVIERTETE EN UN</p>
-    <p class="bold">ORADOR</p>
-    <input class="caja_texto" type="text" value="Nombre">
-    <input class="caja_texto" type="text" value="Apellido">
-    <textarea value="¿Sobre qué quieres hablar?" cols="30" rows="10"></textarea>
+    <div class="container5">
+        <h4>CONVIERTETE EN UN</h4>
+        <h1><strong>ORADOR</strong></h1>
+        <p>Anótate como orador para dar una <a href="#" style="text-decoration: dotted; color: grey;">charla ignite</a>. Cuéntanos de qué quieres hablar!</p>
+    </div>
+    <div class="container6">
+        <input type="text" value="Nombre" class="inputs_half">
+        <input type="text" value="Apellido" class="inputs_half">
+    </div>
+    <div class="container7">
+        <input type="textarea" value="¿Sobre qué quieres hablar?" class="inputs" style="height: 100px;">
+        <p style="font-size: small;">Recuerda incluir un título para tu charla.</p>
+        <input type="button" value="Enviar" class="inputs" id="boton_enviar">
+    </div>
     <footer>
-        CHAU
+        <a href="#" class="footer-link">Preguntas<br>frecuentes</a>
+        <a href="#" class="footer-link">Contactanos</a>
+        <a href="#" class="footer-link">Prensa</a>
+        <a href="#" class="footer-link">Conferencias</a>
+        <a href="#" class="footer-link">Términos y<br> condiciones</a>
+        <a href="#" class="footer-link">Privacidad</a>
+        <a href="#" class="footer-link">Estudiantes</a>
     </footer>
 </body>
 </html>
