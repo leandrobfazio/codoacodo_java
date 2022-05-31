@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP_Integrador_HTML_CSS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/Javascript" src="javascript/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/codoacodo.png" alt="logo codo a codo">
+            <h2 class="logo-nombre">Conf Bs As</h2>
+        </div>
+        <nav class="menu_derecha">
+            <a href="#" class="nav-link" style="color: lightgray;">La Conferencia</a>
+            <a href="#" class="nav-link">Los oradores</a>
+            <a href="#" class="nav-link">El lugar y la fecha</a>
+            <a href="#" class="nav-link" style="color: green;">Conviertete en orador</a>
+        </nav>
+    </header>
+    <div class="container3">
+        <div class="cajas_promociones">
+            <h2>Estudiante</h2>
+            <br>
+            <p>Tienen un descuento</p>
+            <br>
+            <h2>80%</h2>
+            <br>
+            <h5>* presentar documentación</h5>
+        </div>
+        <div class="cajas_promociones">
+            <h2>Trainee</h2>
+            <br>
+            <p>Tienen un descuento</p>
+            <br>
+            <h2>50%</h2>
+            <br>
+            <h5>* presentar documentación</h5>
+        </div>
+        <div class="cajas_promociones" style="border-color: khaki;">
+            <h2>Junior</h2>
+            <br>
+            <p>Tienen un descuento</p>
+            <br>
+            <h2>15%</h2>
+            <br>
+            <h5>* presentar documentación</h5>
+        </div>
+    </div>
+    <div class="container5">
+        <p>VENTA</p>
+        <h1><strong>VALOR DE TICKET $200</strong></h1>
+    </div>
+    <div class="container6">
+        <input type="text" onfocus="this.value=''" value="Nombre" class="inputs_half">
+        <input type="text" onfocus="this.value=''" value="Apellido" class="inputs_half">
+    </div>
+    <div class="container7">
+        <input type="text" onfocus="this.value=''" value="Correo" class="inputs" style="height: 100px;">
+    </div>
+    <div class="container8">
+        <p style="width: 48%;">Cantidad</p>
+        <p style="width: 48%;">Categoría</p>
+    </div>
+    <div class="container6">
+        <input type="text" onfocus="this.value=''" value="Cantidad" class="inputs_half" id="cantidad">
+        <select name="combo" class="inputs_half" id="categoria">
+            <option value="estudiante" selected>Estudiante</option>
+            <option value="trainee">Trainee</option>
+            <option value="junior">Junior</option>
+        </select>
+    </div>
+    <div class="resultado">
+        <span><p><strong>Total a pagar: $</strong></p></span>
+        <span><p id="total"></p></span>
+    </div>
+    <div class="container8">
+        <input type="button" value="Borrar" class="inputs_half" id="boton_borrar">
+        <input type="submit" value="Resumen" class="inputs_half" id="boton_resumen" onclick="TotalCalc()">
+    </div>
+    <footer>
+        <a href="#" class="footer-link">Preguntas<br>frecuentes</a>
+        <a href="#" class="footer-link">Contactanos</a>
+        <a href="#" class="footer-link">Prensa</a>
+        <a href="#" class="footer-link">Conferencias</a>
+        <a href="#" class="footer-link">Términos y<br> condiciones</a>
+        <a href="#" class="footer-link">Privacidad</a>
+        <a href="#" class="footer-link">Estudiantes</a>
+    </footer>    
+</body>

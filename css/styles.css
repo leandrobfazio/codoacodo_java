@@ -72,6 +72,7 @@ header {
 #boton_verde {
     background-color: green;
     border: 0;
+    cursor: pointer;
 }
 
 .botones {
@@ -176,6 +177,25 @@ header {
     margin: auto;
 }
 
+.container8 {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resultado {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    background-color: lightblue;
+    border-radius: 3%;
+    border: 0;
+    text-align: left;
+
+}
+
 .inputs {
     width: 100%;
     margin-top: 10px;
@@ -198,7 +218,23 @@ header {
     font-size: 20px;
     border-radius: 5%;
     border: 0;
+}
 
+#boton_borrar {
+    background-color: rgb(28, 235, 1);
+    color: white;
+    font-size: 20px;
+    border-radius: 5%;
+    border: 0;
+}
+
+#boton_resumen {
+    background-color: rgb(28, 235, 1);
+    color: white;
+    font-size: 20px;
+    border-radius: 5%;
+    border: 0;
+    cursor: pointer;
 }
 
 footer {
@@ -213,4 +249,15 @@ footer {
 .footer-link {
     color: lightgray;
     margin: 20px;
+}
+
+.cajas_promociones {
+    width: 300px;
+    height: 300px;
+    border: 2px solid lightskyblue;
+    padding: 50px;
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
 }
