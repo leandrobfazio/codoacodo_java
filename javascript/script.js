@@ -20,5 +20,5 @@ function TotalCalc() {
     }
     var totalSinDescuento = cantidad * valorEntrada;
     var descuentoTotal = totalSinDescuento * descuento;
-    document.getElementById('total').innerHTML = totalSinDescuento - descuentoTotal;
+    window.document.getElementById('total').innerHTML = totalSinDescuento - descuentoTotal;
 };
